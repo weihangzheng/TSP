@@ -1,3 +1,8 @@
+import random
+import math
+import sys
+import itertools
+
 def pathCost(path, distMat):
 	cost = 0
 	for i in range(len(path)-1):

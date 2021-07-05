@@ -5,7 +5,7 @@ import itertools
 import sys
 from visualize import plotTSP
 import threading
-from pathfinding import pathCost, genGreedyPath, genGreedyPath, bruteTSP
+from pathfinding import pathCost, genGreedyPath, genRandomPath, bruteTSP
 
 MAXY = 10
 MAXY = 10
@@ -45,12 +45,12 @@ print(rankedMat)
 path = genGreedyPath(rankedMat, numnodes)
 print(path)
 print(pathCost(path, distMat))
-plotTSP(path, locs, 1)
+
 
 randpath = genRandomPath(numnodes)
 print(randpath)
 print(pathCost(randpath, distMat))
-plotTSP(randpath, locs, 1)
+
 
 bestpath = bruteTSP(distMat, numnodes, locs)
 print(bestpath)
