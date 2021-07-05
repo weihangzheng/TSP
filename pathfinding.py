@@ -39,7 +39,6 @@ def bruteTSP(distMat, numnodes, locs):
 	for i in range(numnodes-1):
 		randpathmid.append(i+1)
 	perms = itertools.permutations(randpathmid)
-	np.array_split(perms)
 	idx = 1
 	for e in perms:
 		if idx % 10000 == 0:
