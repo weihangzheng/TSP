@@ -1,4 +1,4 @@
 # TSP
 Testing stuff out
 
-'Python TSP.py' to see whack shit happen
+'Python TSP.py' to see whack happen
